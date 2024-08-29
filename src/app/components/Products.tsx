@@ -55,7 +55,7 @@ const ProductGallery: React.FC = () => {
   };
 
   return (
-    <div className="py-12">
+    <div className="py-12 bg-white">
       <div className="flex justify-center space-x-6 mb-8">
         {Object.keys(productsData).map((tab) => (
           <button
