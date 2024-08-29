@@ -3,6 +3,9 @@ import Navbar from '../app/components/Navbar';
 import HeroSection from '../app/components/HeroSection';
 import TopBar from './components/TopBar';
 import CategoryList from './components/CategoryList';
+import Products from '../app/components/Products';
+import PromotionalSection from './components/PromotionalSection';
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
@@ -17,6 +20,9 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <CategoryList/>
+      <Products/>
+      <PromotionalSection/>
+      <Footer/>
 
     </>
   );
