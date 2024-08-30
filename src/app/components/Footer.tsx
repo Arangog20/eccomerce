@@ -1,8 +1,12 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faX} from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF, faInstagram, faTiktok, faPinterest } from '@fortawesome/free-brands-svg-icons';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="bg-white py-12 border-t border-gray-200">
+    <footer className="bg-amber-100 py-12 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Columna de Información */}
@@ -14,11 +18,11 @@ const Footer = () => {
             <a href="#" className="text-sm text-black font-medium underline flex items-center mt-4">Get direction <span className="ml-1">→</span></a>
             <div className="flex space-x-4 mt-4">
               {/* Iconos sociales */}
-              <a href="#"><img src="/icons/facebook.svg" alt="Facebook" className="w-6 h-6" /></a>
-              <a href="#"><img src="/icons/twitter.svg" alt="Twitter" className="w-6 h-6" /></a>
-              <a href="#"><img src="/icons/instagram.svg" alt="Instagram" className="w-6 h-6" /></a>
-              <a href="#"><img src="/icons/tiktok.svg" alt="TikTok" className="w-6 h-6" /></a>
-              <a href="#"><img src="/icons/pinterest.svg" alt="Pinterest" className="w-6 h-6" /></a>
+              <a href="#"><FontAwesomeIcon icon ={faFacebookF} className="w-6 h-6" /></a>
+              <a href="#"><FontAwesomeIcon icon={faX}  className="w-6 h-6" /></a>
+              <a href="#"><FontAwesomeIcon icon={faInstagram}  className="w-6 h-6" /></a>
+              <a href="#"><FontAwesomeIcon icon={faTiktok} className="w-6 h-6" /></a>
+              <a href="#"><FontAwesomeIcon icon={faPinterest} className="w-6 h-6" /></a>
             </div>
           </div>
 
@@ -30,7 +34,7 @@ const Footer = () => {
               <li><a href="#" className="text-sm text-gray-700 hover:underline">Returns + Exchanges</a></li>
               <li><a href="#" className="text-sm text-gray-700 hover:underline">Shipping</a></li>
               <li><a href="#" className="text-sm text-gray-700 hover:underline">Terms & Conditions</a></li>
-              <li><a href="#" className="text-sm text-gray-700 hover:underline">FAQ's</a></li>
+              <li><a href="#" className="text-sm text-gray-700 hover:underline">FAQs</a></li>
               <li><a href="#" className="text-sm text-gray-700 hover:underline">Compare</a></li>
               <li><a href="#" className="text-sm text-gray-700 hover:underline">My Wishlist</a></li>
             </ul>
@@ -63,7 +67,7 @@ const Footer = () => {
           <div className="flex items-center space-x-4">
             {/* Iconos de idioma */}
             <div className="flex items-center space-x-2">
-              <img src="/icons/flag-us.svg" alt="USA Flag" className="w-6 h-6" />
+              <Image src="" alt="USA Flag" className="w-6 h-6" />
               <span className="text-sm text-gray-700">USD</span>
             </div>
             <div className="flex items-center space-x-2">
@@ -72,11 +76,11 @@ const Footer = () => {
           </div>
           <div className="flex items-center space-x-4">
             {/* Iconos de pago */}
-            <img src="/icons/visa.svg" alt="Visa" className="w-8 h-6" />
-            <img src="/icons/paypal.svg" alt="PayPal" className="w-8 h-6" />
-            <img src="/icons/mastercard.svg" alt="MasterCard" className="w-8 h-6" />
-            <img src="/icons/amex.svg" alt="American Express" className="w-8 h-6" />
-            <img src="/icons/discover.svg" alt="Discover" className="w-8 h-6" />
+            <Image src="" alt="Visa" />
+            <Image src="" alt="PayPal" className="w-8 h-6" />
+            <Image src="" alt="MasterCard" className="w-8 h-6" />
+            <Image src="" alt="American Express" className="w-8 h-6" />
+            <Image src="" alt="Discover" className="w-8 h-6" />
           </div>
           <button className="p-2 border rounded-full border-gray-300 hover:bg-gray-100">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
